@@ -1,0 +1,1539 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+.subbar {
+  width: 100%;
+  height: 6%;
+  background-color: black;
+  display: flex;
+  color: white;
+}
+.currency {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: dosis;
+  font-size: 14px;
+  font-weight: 600;
+}
+.help {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-family: dosis;
+  font-size: 13px;
+}
+span {
+  font-family: dosis;
+  font-size: 14px;
+  font-weight: 700;
+}
+.login {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: dosis;
+  font-size: 14px;
+  font-weight: 700;
+}
+.socialmedia {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 15px;
+}
+.socialmedia i {
+  color: white;
+}
+.navbar {
+  width: 100%;
+  height: 30%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menuicon {
+  width: 10%;
+  height: 20%;
+  /* background-color: grey; */
+  display: flex;
+  align-items: center;
+  display: none;
+}
+.icon {
+  width: 30%;
+  height: 100%;
+  background-color: #a8e8e2;
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menutext {
+  font-family: dosis;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 10%;
+  text-transform: uppercase;
+}
+
+.logo {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.menu {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: dosis;
+  font-size: 16px;
+  font-weight: 600;
+}
+.icons {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.span,
+.cart {
+  font-family: dosis;
+  font-size: 14px;
+  margin-top: 6px;
+  display: flex;
+}
+.span2{
+  display: none;
+}
+.icons i {
+  font-size: 25px;
+}
+.background {
+  width: 100%;
+  height: 100%;
+  background-image: url("./assests/background.png");
+  background-size: 100% 100%;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  position: relative;
+}
+.heading {
+  width: 100%;
+  height: 52%;
+  font-family: dosis;
+  color: #a8e8e2;
+  font-size: 330px;
+  font-weight: 700;
+}
+.position {
+  margin-left: 20px;
+  position: absolute;
+  bottom: 13%;
+  color: black;
+  font-family: dosis;
+  font-size: 35px;
+  font-weight: 600;
+  letter-spacing: 35px;
+}
+.maingrid {
+  width: 100%;
+  height: 80%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subgrid {
+  width: 80%;
+  height: 55%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 25px;
+  background-color: white;
+  letter-spacing: 1px;
+}
+.product {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.product img {
+  width: 100%;
+  height: 100%;
+}
+.count {
+  color: white;
+  position: absolute;
+  top: 60%;
+  left: 20%;
+  font-family: dosis;
+  font-size: 14px;
+  font-weight: 200;
+}
+.name {
+  width: 60%;
+  position: absolute;
+  bottom: 10%;
+  left: 20%;
+  font-family: dosis;
+  color: whitesmoke;
+  font-size: 24px;
+  font-weight: 700;
+}
+.basediv {
+  width: 100%;
+  height: 100%;
+  /* background-color: grey; */
+  display: flex;
+}
+.menposter {
+  width: 43%;
+  height: 100%;
+}
+.menposter img {
+  width: 100%;
+  height: 100%;
+}
+.subbase {
+  width: 57%;
+  height: 100%;
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mencart {
+  width: 95%;
+  height: 95%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sidegap {
+  width: 90%;
+  height: 90%;
+}
+.emptyspace {
+  width: 100%;
+  height: 5%;
+  background-color: white;
+}
+.text h2 {
+  font-family: dosis;
+  color: #a8e8e2;
+  font-size: 40px;
+  text-align: left;
+}
+.text h4 {
+  font-family: dosis;
+  font-size: 18px;
+  font-weight: 400;
+}
+.emptyspace2 {
+  width: 100%;
+  height: 5%;
+}
+.grid {
+  width: 100%;
+  height: 80%;
+  margin: 10px;
+  letter-spacing: 1px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 25px;
+  overflow: hidden;
+}
+.choice {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.choiceimg {
+  width: 100%;
+  height: 60%;
+  /* background-color: yellow; */
+  overflow: hidden;
+  position: relative;
+  /* top: 0; */
+}
+.front {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  /* overflow: hidden; */
+}
+.back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  /* overflow: hidden; */
+}
+.back {
+  opacity: 0;
+}
+.choice:hover .front {
+  opacity: 0;
+}
+.choice:hover .back {
+  opacity: 1;
+}
+.choicecontent {
+  width: 100%;
+  height: 40%;
+  position: absolute;
+  bottom: 0;
+  
+}
+.choice:hover .back {
+  transform: scale(1.1, 1.1);
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+.choice:hover .choicecontent h5 {
+  opacity: 0;
+}
+.choice:hover .choicecontent button{
+  opacity: 1;
+  /* transform: translateY(10%); */
+}
+.menicon1 i {
+  position: absolute;
+  right: 10%;
+  top: 5%;
+  font-size: 20px;
+}
+.menicon1 p {
+  position: absolute;
+  right: 9%;
+  top: 7%;
+  font-size: 15px;
+}
+.menicon2 i {
+  position: absolute;
+  right: 10%;
+  top: 18%;
+  font-size: 20px;
+}
+.menicon2 p {
+  position: absolute;
+  right: 5%;
+  top: 20%;
+  font-size: 15px;
+}
+.menicon {
+  opacity: 0;
+}
+.choice:hover .menicon {
+  opacity: 1;
+}
+.choice p {
+  margin-top: 14px;
+  font-family: dosis;
+  font-size: 10px;
+}
+.choice h3 {
+  margin-top: 21px;
+  font-family: Dosis;
+  font-size: 12px;
+  font-weight: 600;
+  color: black;
+}
+.choice h5 {
+  margin-top: 25px;
+  color: black;
+  font-size: 15px;
+  font-family: dosis;
+  font-weight: 300;
+}
+.choice button{
+  width: 45%;
+  height: 15%;
+   border-color: #a8e8e2;
+  background-color: white;
+  font-family: dosis;
+  font-size: 10px;
+  font-weight: 300;
+  opacity: 0;
+}
+.mainshoe {
+  width: 100%;
+  height: 100%;
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subshoe {
+  width: 90%;
+  height: 90%;
+  /* background-color: white; */
+}
+.mainshoegrid {
+  width: 100%;
+  height: 100%;
+  letter-spacing: 1px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-content: center;
+  justify-content: center;
+  gap: 30px;
+}
+.mainshoegrid img {
+  width: 90%;
+  height: 70%;
+  margin-top: 20px;
+}
+.shoegrid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.shoegrid p {
+  color: #a8e8e2;
+  font-family: dosis;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+.shoegrid h3 {
+  color: black;
+  font-family: dosis;
+  font-size: 30px;
+  font-weight: 600;
+}
+.shoegrid h2 {
+  color: black;
+  font-family: dosis;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+}
+.shoegrid span {
+  color: #adadad;
+  font-family: dosis;
+  font-size: 22px;
+  font-weight: 300;
+  text-decoration: line-through;
+}
+.shoegrid button {
+  width: 30%;
+  height: 20%;
+  border-radius: 25px;
+  border-style: solid;
+  border-width: 1px;
+  margin-top: 20px;
+  padding: 10px;
+  font-family: dosis;
+  font-size: 13px;
+  font-weight: 500;
+  background-color: white;
+}
+.shoegrid button:hover {
+  transform: translateY(4px);
+  transition-duration: 0.1s;
+  transition-timing-function: linear;
+}
+.basediv2 {
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+  display: flex;
+}
+.subbase2 {
+  width: 57%;
+  height: 100%;
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.womencart {
+  width: 95%;
+  height: 95%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text2 h2 {
+  margin-top: 50px;
+  font-family: dosis;
+  color: #a8e8e2;
+  font-size: 40px;
+  text-align: left;
+}
+.text2 h4 {
+  font-family: dosis;
+  font-size: 18px;
+  font-weight: 400;
+}
+.grid2 {
+  width: 100%;
+  height: 75%;
+  letter-spacing: 1px;
+  margin-left: 10px;
+  margin-top: 10%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 25px;
+  overflow: hidden;
+}
+.choice2 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.choiceimg2 {
+  width: 100%;
+  height: 60%;
+  /* background-color: yellow; */
+  overflow: hidden;
+  position: relative;
+  /* top: 0; */
+}
+.front {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  /* overflow: hidden; */
+}
+.back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  /* overflow: hidden; */
+}
+.back {
+  opacity: 0;
+}
+.choice2:hover .front {
+  opacity: 0;
+}
+.choice2:hover .back {
+  opacity: 1;
+}
+.choicecontent2 {
+  width: 100%;
+  height: 40%;
+  position: absolute;
+  bottom: 0;
+  /* background-color: aqua; */
+}
+.choice2:hover .back {
+  transform: scale(1.1, 1.1);
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+.choice2:hover .choicecontent2 h5 {
+  opacity: 0;
+}
+.choice2:hover .choicecontent2 button{
+  opacity: 1;
+  /* transform: translateY(10%); */
+}
+.choice2 button{
+  width: 45%;
+  height: 15%;
+   border-color: #a8e8e2;
+  background-color: white;
+  font-family: dosis;
+  font-size: 10px;
+  font-weight: 300;
+  opacity: 0;
+}
+.womenicon1 i {
+  position: absolute;
+  right: 10%;
+  top: 5%;
+  font-size: 20px;
+}
+.womenicon1 p {
+  position: absolute;
+  right: 9%;
+  top: 7%;
+  font-size: 15px;
+}
+.womenicon2 i {
+  position: absolute;
+  right: 10%;
+  top: 18%;
+  font-size: 20px;
+}
+.womenicon2 p {
+  position: absolute;
+  right: 5%;
+  top: 20%;
+  font-size: 15px;
+}
+.womenoutofstock button {
+  width: 80%;
+  height: 7%;
+  background-color: whitesmoke;
+  border-color: whitesmoke;
+  font-family: dosis;
+  font-size: 13px;
+  font-weight: 500;
+  position: absolute;
+  left: 10%;
+  top: 50%;
+}
+.choice2 p {
+  margin-top: 13px;
+  font-family: dosis;
+  font-size: 10px;
+}
+.choice2 h3 {
+  margin-top: 10px;
+  font-family: Dosis;
+  font-size: 12px;
+  font-weight: 600;
+  color: black;
+}
+.choice2 h5 {
+  margin-top: 25px;
+  color: black;
+  font-size: 15px;
+  font-family: dosis;
+  font-weight: 200;
+}
+.womenicon {
+  opacity: 0;
+}
+.choice2:hover .womenicon {
+  opacity: 1;
+}
+.womenposter {
+  width: 43%;
+  height: 100%;
+}
+.womenposter img {
+  width: 100%;
+  height: 100%;
+}
+.mainbestselling {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subbestselling {
+  width: 95%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.subbestselling hr {
+  width: 100px;
+  height: 6px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  background-color: #a8e8e2;
+  border-color: #a8e8e2;
+  border-radius: 50px;
+}
+.subbestselling h2 {
+  margin-top: 30px;
+  font-family: dosis;
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+}
+.gridbestselling {
+  width: 85%;
+  height: 85%;
+  letter-spacing: 1px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+  overflow: hidden;
+  /* background-color: #a8e8e2; */
+}
+.bestselling {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.bestsellingimg {
+  width: 100%;
+  height: 60%;
+  /* background-color: yellow; */
+  overflow: hidden;
+  position: relative;
+  /* top: 0; */
+}
+/* .bestsellingcontent{
+  width: 100%;
+  height: 35%;
+} */
+.front {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  /* overflow: hidden; */
+}
+.back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  /* overflow: hidden; */
+}
+.back {
+  opacity: 0;
+}
+.bestselling:hover .front {
+  opacity: 0;
+}
+.bestselling:hover .back {
+  opacity: 1;
+}
+.bestsellingcontent {
+  width: 100%;
+  height: 40%;
+  position: absolute;
+  bottom: 0;
+  /* background-color: aqua; */
+}
+.bestselling:hover .back {
+  transform: scale(1.1, 1.1);
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+.bestselling:hover .bestsellingcontent h5 {
+  opacity: 0;
+}
+.bestselling:hover .bestsellingcontent button{
+  opacity: 1;
+  /* transform: translateY(10%); */
+}
+.bestselling button{
+  width: 45%;
+  height: 15%;
+   border-color: #a8e8e2;
+  background-color: white;
+  font-family: dosis;
+  font-size: 10px;
+  font-weight: 300;
+  opacity: 0;
+}
+.sellingicon1 i {
+  position: absolute;
+  right: 10%;
+  top: 5%;
+  font-size: 20px;
+}
+.sellingicon1 p {
+  position: absolute;
+  right: 9%;
+  top: 8%;
+  font-size: 15px;
+}
+.sellingicon2 i {
+  position: absolute;
+  right: 10%;
+  top: 20%;
+  font-size: 20px;
+}
+.sellingicon2 p {
+  position: absolute;
+  right: 5%;
+  top: 22%;
+  font-size: 15px;
+}
+.sellingicon {
+  opacity: 0;
+}
+.bestselling:hover .sellingicon {
+  opacity: 1;
+}
+.womenoutofstock2 button {
+  width: 80%;
+  height: 7%;
+  background-color: whitesmoke;
+  border-color: whitesmoke;
+  font-family: dosis;
+  font-size: 13px;
+  font-weight: 500;
+  position: absolute;
+  left: 10%;
+  top: 50%;
+}
+.bestselling p {
+  margin-top: 13px;
+  font-family: dosis;
+  font-size: 10px;
+}
+.bestselling h3 {
+  margin-top: 10px;
+  font-family: Dosis;
+  font-size: 12px;
+  font-weight: 600;
+  color: black;
+  text-align: left;
+}
+.bestselling h5 {
+  margin-top: 20px;
+  color: black;
+  font-size: 15px;
+  font-family: dosis;
+  font-weight: 200;
+}
+.mainnews {
+  width: 100%;
+  height: 90%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subnews {
+  width: 95%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+.subnews h2 {
+  /* margin-top: 20px; */
+  font-family: Dosis;
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+}
+.subnews hr {
+  width: 100px;
+  height: 6px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  background-color: #a8e8e2;
+  border-color: #a8e8e2;
+  border-radius: 50px;
+}
+.gridnews {
+  width: 100%;
+  height: 55%;
+  letter-spacing: 1px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 40px;
+  overflow: hidden;
+  /* background-color: #a8e8e2;   */
+}
+.newsimg {
+  width: 100%;
+  height: 100%;
+  /* background-color: #adadad; */
+  overflow: hidden;
+}
+.newsimg img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.newsimg:hover {
+  transform: scale(1.1, 1.1);
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+.news {
+  width: 100%;
+  height: 100%;
+  /* margin-top: 40px; */
+  overflow: hidden;
+  position: relative;
+}
+
+.newsposition1 h3 {
+  position: absolute;
+  bottom: 25%;
+  left: 10%;
+  font-family: dosis;
+  color: white;
+  font-size: 26px;
+  font-weight: 600;
+}
+.line hr {
+  position: absolute;
+  bottom: 13%;
+  left: 10%;
+  width: 300px;
+  height: 2px;
+  background-color: whitesmoke;
+  border-color: whitesmoke;
+  border-radius: 20px;
+}
+.date i {
+  display: flex;
+  position: absolute;
+  bottom: 15%;
+  left: 10%;
+  font-size: 15px;
+  color: #a8e8e2;
+}
+.date p {
+  position: absolute;
+  bottom: 15%;
+  left: 15%;
+  font-family: dosis;
+  font-size: 12px;
+  font-weight: 600;
+  color: whitesmoke;
+}
+.mainfooter {
+  width: 100%;
+  height: 75%;
+  letter-spacing: 1px;
+  background-color: white;
+}
+.subfooter {
+  width: 100%;
+  height: 60%;
+  padding: 0px 35px;
+  display: flex;
+}
+.evashop {
+  width: 20%;
+  height: 100%;
+}
+.evashop h3 {
+  font-family: dosis;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.evashop p {
+  font-family: dosis;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.collection {
+  width: 20%;
+  height: 100%;
+}
+.collection h3 {
+  font-family: dosis;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.collection p {
+  font-family: dosis;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.customercare {
+  width: 20%;
+  height: 100%;
+}
+.customercare h3 {
+  font-family: dosis;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.customercare p {
+  font-family: dosis;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.update {
+  width: 40%;
+  height: 100%;
+  text-align: right;
+  /* background-color: whitesmoke; */
+}
+.update h3 {
+  font-family: dosis;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.update p {
+  font-family: dosis;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.update button {
+  width: 30%;
+  height: 20%;
+  background-color: #a8e8e2;
+  border-color: #a8e8e2;
+  font-family: dosis;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.update button:hover {
+  background-color: white;
+  border-color: white;
+}
+.update input {
+  width: 40%;
+  height: 20%;
+  margin: 20px;
+  text-align: center;
+}
+.update img {
+  margin: 20px;
+}
+.footermedia {
+  width: 100%;
+  height: 40%;
+  padding: 0px 35px;
+  /* background-color: whitesmoke; */
+}
+.media {
+  width: 100%;
+  height: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+.media hr {
+  width: 40%;
+  height: 3%;
+  background-color: #a8e8e2;
+  color: #a8e8e2;
+  border-color: #a8e8e2;
+}
+.footericon{
+  width: 20%;
+  height: 30%;
+  /* overflow: hidden; */
+  /* display: flex; */
+}
+.footericon i {
+  color: #a8e8e2;
+  font-size: 26px;
+  margin: 0px 15px;
+}
+.media i:hover {
+  font-size: 35px;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+.footermedia h3 {
+  font-family: dosis;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  margin: 20px;
+}
+.doticon{
+  width: 100%;
+  height: 10%;
+  font-size: 10px;
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 5px;
+  color: #adadad;
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .subbar {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+  .navbar {
+    height: 18%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .cart{
+    display: none;
+  }
+  .menuicon {
+    height: 20%;
+    display: flex;
+  }
+  .icon {
+    width: 50%;
+    height: 100%;
+  }
+  .background {
+    height: 40%;
+  }
+  .heading {
+    height: 43%;
+    font-size: 190px;
+  }
+  .position {
+    font-size: 30px;
+    bottom: 7%;
+  }
+  .maingrid {
+    height: 45%;
+    /* display: none; */
+  }
+  .subgrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .subgrid :nth-child(4) {
+    display: none;
+  }
+  .subgrid :nth-child(5) {
+    display: none;
+  }
+  .basediv {
+    height: 100%;
+    width: 100%;
+    display: block;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* background-color: white; */
+    /* display: none; */
+  }
+  .subbase {
+    display: block;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 10%; */
+    /* background-color: white; */
+  }
+  .emptyspace,
+  .emptyspace2 {
+    display: none;
+  }
+  .sidegap {
+    height: 100%;
+    width: 100%;
+    /* background-color: whitesmoke; */
+    /* margin: 5%; */
+    margin: 0;
+  }
+  .menposter {
+    width: 100%;
+    height: 40%;
+  }
+  .menposter img {
+    width: 100%;
+    height: 100%;
+  }
+  .text{
+    margin-top: 5%;
+  }
+  .mencart {
+    width: 95%;
+    height: 95%;
+    /* margin: 10px; */
+    padding: 20px;
+    display: flex;
+  }
+  .grid {
+    width: 100%;
+    height: 80%;
+    margin-top: 5%;
+  }
+  .choiceimg {
+    width: 100%;
+    height: 60%;
+  }
+  .choicecontent {
+    height: 40%;
+  }
+  .mainshoe {
+    height: auto;
+  }
+  .subshoe {
+    height: 100%;
+  }
+  .mainshoegrid {
+    height: auto;
+    margin: 10% 0%;
+    grid-template-columns: none;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 50px;
+  }
+  .mainbestselling {
+    height: 60%;
+    width: 100%;
+  }
+  .subbestselling {
+    /* margin-top: 5%; */
+    height: 100%;
+    width: 100%;
+  }
+  .gridbestselling {
+    margin-top: 5%;
+    width: 90%;
+    height: 70%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .hide {
+    display: none;
+  }
+    .mainnews {
+    height: 45%;
+  }
+  .doticon{
+    display: flex;
+  }
+  .big{
+    font-size: 14px;
+  }
+  .hideinpad{
+    display: none;
+  }
+  .subnews {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  .gridnews {
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gridnews :nth-child(3) {
+    display: none;
+  }
+  .mainfooter {
+    height: 40%;
+  }
+  .subfooter {
+    margin-top: 5%;
+    height: 60%;
+  }
+  .update input {
+    display: none;
+  }
+  .media{
+    height: 40%;
+  }
+  .footermedia {
+    height: 50%;
+  }
+  .footericon{
+    margin: 0;
+    width: 45%;
+    height: 40%;
+    font-size: 20px;
+    display: flex;
+  }
+  .basediv2 {
+    display: block;
+  }
+  .subbase2 {
+    width: 100%;
+    height: 60%;
+  }
+  .womenposter {
+    width: 100%;
+    height: 50%;
+  }
+  .womenposter img {
+    height: 80%;
+    width: 100%;
+  }
+  .womencart{
+    padding: 20px;
+  }
+  .text2 {
+    margin-top: 10%;
+  }
+  .grid2 {
+    height: 70%;
+    margin-top: 5%;
+  }
+  .choice button{
+    margin-top: 5%;
+    opacity: 1;
+  }
+  .choice2 button{
+    margin-top: 5%;
+    opacity: 1;
+  }
+  .bestselling button{
+    margin-top: 5%;
+    opacity: 1;
+  }
+}
+
+
+@media (max-width: 600px) {
+  body{
+    overflow-x:hidden ;
+  }
+  .navbar{
+    width: 100%;
+    height: 15%;
+    justify-content: space-evenly;
+  }
+  .icons{
+    display: none;
+  }
+  .span2{
+  width: 25%;
+  font-size: 20px;
+  /* margin-top: 6px; */
+  display: flex; 
+  align-items: center;
+  justify-content: space-evenly;
+}
+.menutext{
+  display: none ;
+}
+.logo{
+  width: 50%;
+}
+.logo img{
+  width: 40%;
+  height: 50%;
+}
+.menuicon{
+  width: 25%;
+}
+.icon{
+  font-size: 25px;
+  font-weight: 500;
+  background-color: white;
+  color: black;
+  /* width: 50%; */
+}
+.background{
+  width: 100%;
+  height: 30%;
+}
+.heading{
+  height: 40%;
+  font-size: 103px;
+}
+.position p{
+  font-size: 18px;
+  letter-spacing:15px;
+}
+.subgrid{
+  grid-template-columns: repeat(2,1fr);
+}
+.tohide{
+  display: none;
+}
+.basediv{
+  height: 300%;
+}
+.menposter{
+  height: 20%;
+}
+.subbase{
+  /* width: 95%; */
+  height: 80%;
+}
+.grid{
+  margin-top: 20%;
+  margin-left: 8%;
+  width: 85%;
+  height: 90%;
+  /* height: 40%; */
+  /* flex-direction: row; */
+  grid-template-columns: none;
+  grid-template-rows: repeat(3,1fr);
+  gap: 40px;
+}
+.mencart{
+  height: 97%;
+  width: 90%;
+}
+.choice{
+  margin: 0;
+}
+.choiceimg{
+  height: 70%;
+
+}
+.choicecontent{
+  height: 30%;
+}
+.basediv2{
+  height: 300vh;
+}
+.grid2{
+  margin-top: 15%;
+  /* margin-left: 8%; */
+  width: 90%;
+  height: 90%;
+  /* height: 40%; */
+  grid-template-columns: none;
+  grid-template-rows: repeat(3,1fr);
+  gap: 20px;
+}
+.womenposter{
+  height: 25%;
+}
+.subbase2{
+  height: 80%;
+}
+.text2{
+  width: 80%;
+}
+.text2 h2{
+  
+  font-weight: 700;
+}
+.choiceimg2{
+  height: 70%;
+}
+.choicecontent2{
+  height: 30%;
+}
+.mainbestselling{
+  height: 80%;
+}
+.gridbestselling{
+  grid-template-columns: repeat(2,1fr);
+  height: 55%;
+  width: 90%;
+}
+.bestsellingimg{
+  height: 60%;
+}
+.bestsellingcontent{
+  height: 40%;
+  /* row-gap: 20%; */
+}
+.womenoutofstock button{
+  top: 58%;
+}
+.womenoutofstock2 button{
+  top: 45%;
+}
+
+.bestselling h3{
+  margin-top: 15px;
+}
+.bestselling button{
+  margin-top: 15px;
+}
+.gridnews{
+  grid-template-columns: repeat(1,1fr);
+}
+.hideinpad{
+    display: flex;
+  }
+.mainfooter{
+  height: 150vh;
+}
+.subfooter{
+  display: block;
+  height: 80%;
+}
+.evashop{
+  width: 50%;
+  height: 23%;
+}
+.collection{
+  width: 50%;
+  height: 23%;
+}
+.customercare{
+  width: 50%;
+  height: 23%;
+}
+.update{
+  text-align: left;
+  width: 100%;
+  height: 30%;
+}
+.update input{
+  margin-left: 0;
+  width: 100%;
+  height: 10%;
+  display: block;
+}
+.update button{
+  margin-top: 5%;
+  margin-left: 0;
+  width: 100%;
+  height: 10%;
+}
+.update img{
+  height: 11%;
+  width: 100%;
+  margin: 0;
+  margin-top: 5%;
+}
+.footermedia{
+  /* margin-top: 10%; */
+  height: 10%;
+}
+.media{
+  height: 50%;
+}
+.media hr{
+  height: 2px;
+  width: 32%;
+}
+.footericon{
+  height: 25%;
+  width: 35%;
+  margin: 0px 10px;
+}
+.footericon i{
+  margin: 0 5px;
+  letter-spacing: 0;
+  font-size: 20px;
+}
+.media h3{
+  width: 100%;
+  margin: 0;
+}
+
+}

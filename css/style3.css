@@ -1,0 +1,830 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+.subbar {
+  width: 100%;
+  height: 6%;
+  background-color: black;
+  display: flex;
+  color: white;
+}
+.currency {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: dosis;
+  font-size: 14px;
+  font-weight: 600;
+}
+.help {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-family: dosis;
+  font-size: 13px;
+}
+span {
+  font-family: dosis;
+  font-size: 14px;
+  font-weight: 700;
+}
+.login {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: dosis;
+  font-size: 14px;
+  font-weight: 700;
+}
+.socialmedia {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 15px;
+}
+.socialmedia i {
+  color: white;
+}
+.bgimg {
+  position: relative;
+}
+.bgimg img {
+  width: 100%;
+  height: 100%;
+}
+.navbar {
+  width: 100%;
+  height: 30%;
+  /* background-color: white; */
+  /* padding: 30px; */
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 10%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.menu {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: dosis;
+  font-size: 16px;
+  font-weight: 600;
+}
+.icons {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.span,
+.cart {
+  font-family: dosis;
+  font-size: 14px;
+  margin-top: 6px;
+  display: flex;
+}
+.icons i {
+  font-size: 25px;
+}
+.linetext {
+  width: 100%;
+  height: 20%;
+  /* background-color: white;  */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 45%;
+}
+.linetext hr {
+  width: 7%;
+  height: 1%;
+  background-color: #a8e8e2;
+  border-color: #a8e8e2;
+  border-radius: 20px;
+}
+.linetext p {
+  color: black;
+  font-family: dosis;
+  font-weight: 300;
+  font-size: 14px;
+  margin: 0px 15px;
+}
+.linetext h2 {
+  color: #a8e8e2;
+  font-family: dosis;
+  font-weight: 500;
+  font-size: 16px;
+}
+.bluetext {
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  top: 60%;
+}
+.bluetext h6 {
+  font-family: dosis;
+  font-size: 70px;
+  font-weight: 600;
+  text-align: center;
+  color: #a8e8e2;
+}
+.centerbutton {
+  width: 100%;
+  height: 10%;
+  /* background-color: #999999; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 80%;
+}
+.centerbutton p {
+  /* width: 15%;
+  height: 35%; */
+  margin-top: 10px;
+  text-align: center;
+  font-family: dosis;
+  font-weight: 600;
+  font-size: 16px;
+}
+.centerbutton i{
+  font-size: 25px;
+  color: #a8e8e2;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+.main{
+  width: 100%;
+  height: 85%;
+  /* background-color: #a8e8e2; */
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+}
+.leftside1{
+  width: 27%;
+  height: 100%;
+  /* background-color: whitesmoke; */
+  /* display: flex;
+  flex-direction: row;
+  align-items: center; */
+  /* justify-content: center; */
+}
+.types{
+  width: 80%;
+  height: 50%;
+  /* background-color: white; */
+  margin-top: 30%;
+  margin-left: 10%;
+}
+.types p{
+  font-family: dosis;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 20px;
+  letter-spacing: 1px;
+
+}
+.rightside1{
+  width: 73%;
+  height: 100%;
+  /* background-color: antiquewhite; */
+}
+.available{
+  width: 80%;
+  height: 20%;
+  /* background-color: whitesmoke; */
+  margin-top: 10%;
+  margin-left: 10%;
+}
+.available h3{
+  font-family: dosis;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+.outofstock{
+    text-decoration: line-through;
+}
+.available label{
+  font-family: dosis;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+input,label:hover{
+  font-weight: bold;
+}
+.top{
+  width: 95%;
+  height: 6%;
+  margin-top: 6%;
+  /* margin-bottom: 20%; */
+  /* background-color: grey; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top p{
+  font-family: dosis;
+  font-size: 14px;
+  font-weight: 400;
+}
+.top h2{
+  font-family: dosis;
+  font-size: 14px;
+  font-weight: 400;
+}
+.line{
+  width: 95%;
+  height: 3%;
+  margin-bottom: 20px;
+  /* background-color: black; */
+}
+.line hr{
+  width: 13%;
+  height: 6%;
+  background-color: #a8e8e2;
+  border-color: #a8e8e2;
+  margin-left : 87%;
+}
+.grid1 {
+  width: 95%;
+  height: 80%;
+  /* margin-top: 10%; */
+  letter-spacing: 1px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  overflow: hidden;
+  /* background-color: #a8e8e2; */
+}
+.gridcollection {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.gridimg {
+  width: 100%;
+  height: 70%;
+  /* background-color: yellow; */
+  overflow: hidden;
+  position: relative;
+  /* top: 0; */
+}
+.front {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  /* overflow: hidden; */
+}
+.back {
+  width: 100%;
+  height:100%;
+  position: absolute;
+  top: 0;
+  /* overflow: hidden; */
+}
+.back {
+  opacity: 0;
+}
+.gridcollection:hover .front {
+  opacity: 0;
+}
+.gridcollection:hover .back {
+  opacity: 1;
+}
+/* .bestsellingcontent{
+  width: 100%;
+  height: 35%;
+  position: absolute;
+  bottom: 0;
+  background-color: aqua;
+} */
+.gridcollection:hover .back {
+  transform: scale(1.1, 1.1);
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+.gridcollection{
+  position: relative;
+}
+.icon1 i{
+  position: absolute;
+  right: 10%;
+  top: 6%;
+  font-size: 20px;
+}
+.icon1 p{
+  position: absolute;
+  right: 9%;
+  top: 8%;
+  font-size: 15px;
+}
+.icon2 i{
+  position: absolute;
+  right: 10%;
+  top: 19%;
+  font-size: 20px;
+}
+.icon2 p{
+  position: absolute;
+  right: 5%;
+  top: 21%;
+  font-size: 15px;
+}
+.collectionicon1{
+    opacity: 0;
+}
+.gridcollection:hover .collectionicon1{
+    opacity: 1;
+}
+
+.gridcollection p {
+  margin-top: 13px;
+  font-family: dosis;
+  font-size: 10px;
+}
+.gridcollection h3 {
+  margin-top: 10px;
+  font-family: Dosis;
+  font-size: 12px;
+  font-weight: 600;
+  color: black;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 18px;
+}
+.gridcollection h5 {
+  margin-top: 20px;
+  color: black;
+  font-size: 15px;
+  font-family: dosis;
+  font-weight: 200;
+}
+.main2{
+  width: 100%;
+  height: 70%;
+  /* background-color: #a8e8e2; */
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+}
+.leftside2{
+  width: 27%;
+  height: 100%;
+  /* background-color: whitesmoke; */
+  /* display: flex; */
+}
+.colortext{
+  width: 80%;
+  height: 10%;
+  margin-left: 10%;
+  font-family: dosis;
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 10%;
+  letter-spacing: 1px;
+  /* background-color: white; */
+}
+.colortext{
+  width: 80%;
+  height: 10%;
+  margin-left: 10%;
+  font-family: dosis;
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 10%;
+  letter-spacing: 1px;
+  /* background-color: white; */
+}
+.maincolor{
+  width: 70%;
+  height: 6%;
+  margin-left: 10%;
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  gap: 10px;
+  
+}
+.color img{
+  width: 100%;
+  height: 100%;
+}
+.color:hover img{
+  border: 3px solid black;
+}
+/* .mainsize{
+  width: 70%;
+  height: 6%;
+  margin-left: 10%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+  
+} */
+.sizetext{
+  width: 80%;
+  height: 10%;
+  /* margin-top: 10%; */
+  margin-left: 10%;
+  font-family: dosis;
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 20%;
+  letter-spacing: 1px;
+  /* background-color: white; */
+}
+.mainsize{
+  width: 80%;
+  height: 7%;
+  /* margin-top: 10%; */
+  margin-left: 10%;
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  gap: 10px;
+  
+}
+.size button{
+  width: 100%;
+  height: 100%;
+  border: 1px solid #a8e8e2;
+  font-family: dosis;
+  font-size: 10px;
+  font-weight: 500;
+  background-color: white;
+}
+.size:hover button{
+  background-color: #a8e8e2;
+}
+.brand{
+  width: 80%;
+  height: 20%;
+  /* background-color: whitesmoke; */
+  margin-top: 20%;
+  margin-left: 10%;
+}
+.brand h3{
+  font-family: dosis;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+.brand label,input{
+  font-family: dosis;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+input,label:hover{
+  font-weight: bold;
+}
+.featuretext{
+  width: 80%;
+  height: 15%;
+  /* background-color: whitesmoke; */
+  margin-top: 20%;
+  margin-left: 10%;
+}
+.featuretext h3{
+  font-family: dosis;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 20px;
+  /* margin-bottom: 10px; */
+  letter-spacing: 1px;
+}
+.mainfeature{
+  width: 80%;
+  height: 100%;
+  /* background-color: #a8e8e2; */
+  margin-left: 10%;
+  display: grid;
+  grid-template-rows: 100px 100px 100px;
+  
+  row-gap: 30px;
+}
+.feature{
+  display: flex;
+  gap: 0;
+}
+.text{
+  width: 100%;
+  height: 100%;
+  margin-left: 20px;
+  /* display: flex; */
+  flex-direction: row;
+}
+.feature h3{
+  font-family: dosis;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+.feature h5{
+  font-family: dosis;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+.poster{
+  width: 80%;
+  height: 80%;
+  margin-left: 10%;
+}
+.poster img{
+  width: 100%;
+  height: 100%;
+}
+.rightside2{
+  width: 73%;
+  height: 100%;
+  /* background-color: antiquewhite; */
+}
+.grid2 {
+  width: 95%;
+  height: 100%;
+  letter-spacing: 1px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  overflow: hidden;
+  /* background-color: #a8e8e2; */
+}
+.gridcollection1 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.gridimg {
+  width: 100%;
+  height: 60%;
+  /* background-color: yellow; */
+  overflow: hidden;
+  position: relative;
+  /* top: 0; */
+}
+.front {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  /* overflow: hidden; */
+}
+.back {
+  width: 100%;
+  height:100%;
+  position: absolute;
+  top: 0;
+  /* overflow: hidden; */
+}
+.back {
+  opacity: 0;
+}
+.gridcollection1:hover .front {
+  opacity: 0;
+}
+.gridcollection1:hover .back {
+  opacity: 1;
+}
+/* .bestsellingcontent{
+  width: 100%;
+  height: 35%;
+  position: absolute;
+  bottom: 0;
+  background-color: aqua;
+} */
+.gridcollection1:hover .back {
+  transform: scale(1.1, 1.1);
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+.gridcollection1{
+  position: relative;
+}
+.gridcollection1 p {
+  margin-top: 13px;
+  font-family: dosis;
+  font-size: 10px;
+}
+.gridcollection1 h3 {
+  margin-top: 10px;
+  font-family: Dosis;
+  font-size: 12px;
+  font-weight: 600;
+  color: black;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 18px;
+}
+.gridcollection1 h5 {
+  margin-top: 20px;
+  color: black;
+  font-size: 15px;
+  font-family: dosis;
+  font-weight: 200;
+}
+.collectionicon2{
+    opacity: 0;
+}
+.gridcollection1:hover .collectionicon2{
+    opacity: 1;
+}
+.last{
+  width: 100%;
+  height: 10%;
+  /* background-color: gray; */
+}
+.last h3{
+  font-family: Dosis;
+  font-size: 16px;
+  font-weight: 600;
+  color: #999999;
+  text-align: center;
+  letter-spacing: 3px;
+}
+.mainfooter{
+  width: 100%;
+  height: 75%;
+  letter-spacing: 1px;
+  background-color: white;
+}
+.subfooter{
+  width: 100%;
+  height: 60%;
+  margin-top: 8%;
+  padding: 0px 35px;
+  display: flex;
+}
+.evashop{
+  width: 20%;
+  height: 100%;
+}
+.evashop h3{
+  font-family: dosis;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.evashop p{
+  font-family: dosis;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.collection{
+  width: 20%;
+  height: 100%;
+}
+.collection h3{
+  font-family: dosis;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.collection p{
+  font-family: dosis;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.customercare{
+  width: 20%;
+  height: 100%;
+}
+.customercare h3{
+  font-family: dosis;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.customercare p{
+  font-family: dosis;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  
+}
+.update{
+  width: 40%;
+  height: 100%;
+  text-align: right;
+  /* background-color: whitesmoke; */
+}
+.update h3{
+  font-family: dosis;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.update p{
+  font-family: dosis;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.update button{
+  width: 30%;
+  height: 20%;
+  background-color: #a8e8e2;
+  border-color: #a8e8e2;
+  font-family: dosis;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.update button:hover{
+  background-color: white;
+  border-color: white;
+}
+.update input{
+  font-size: 14px;
+  font-weight: 500;
+  width: 40%;
+  height: 20%;
+  margin: 20px;
+  text-align: center;
+}
+.update img{
+  margin: 20px;
+}
+.footermedia{
+  width: 100%;
+  height: 40%;
+  padding: 0px 35px;
+  /* background-color: whitesmoke; */
+}
+.media {
+  width: 100%;
+  height: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+.media hr{
+  width: 40%;
+  height: 3%;
+  background-color: #a8e8e2;
+  color: #a8e8e2;
+  border-color: #a8e8e2;
+}
+.media i{
+  color: #a8e8e2;
+  font-size: 26px;
+  margin: 0px 15px;
+}
+.media i:hover{
+  font-size: 35px;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+.footermedia h3{
+  font-family: dosis;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  margin: 20px;
+
+}
