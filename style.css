@@ -1355,7 +1355,7 @@ span {
 }
 .heading{
   height: 40%;
-  font-size: 95px;
+  font-size: 90px;
 }
 .position p{
   font-size: 18px;
@@ -1368,14 +1368,14 @@ span {
   display: none;
 }
 .name p{
-  font-size: 15px;
+  font-size: 17px;
   bottom: 5%;
 }
 .shoegrid h3{
   font-size: 25px;
 }
 .count h3{
-  font-size: 10px;
+  font-size: 12px;
   top: 55%;
 }
 .basediv{
@@ -1450,7 +1450,7 @@ span {
 }
 .gridbestselling{
   grid-template-columns: repeat(2,1fr);
-  height: 55%;
+  height: 52%;
   width: 90%;
 }
 .bestsellingimg{
