@@ -1354,6 +1354,7 @@ span {
   height: 30%;
 }
 .heading{
+  width: 100vw;
   height: 40%;
   font-size: 90px;
 }
