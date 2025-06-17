@@ -1530,17 +1530,17 @@ span {
 }
 .media hr{
   height: 2px;
-  width: 32%;
+  width: 25%;
 }
 .footericon{
   height: 25%;
-  width: 35%;
+  width: 30%;
   /* margin: 0px 10px; */
 }
 .footericon i{
   margin: 0 5px;
   letter-spacing: 0;
-  font-size: 15px;
+  font-size: 12px;
 }
 .footermedia h3{
   font-size: 10px;
