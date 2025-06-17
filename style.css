@@ -1468,10 +1468,10 @@ span {
 }
 
 .bestselling h3{
-  margin-top: 15px;
+  margin-top: 10px;
 }
 .bestselling button{
-  margin-top: 15px;
+  margin-top: 10px;
 }
 .gridnews{
   grid-template-columns: repeat(1,1fr);
@@ -1535,12 +1535,15 @@ span {
 .footericon{
   height: 25%;
   width: 35%;
-  margin: 0px 10px;
+  /* margin: 0px 10px; */
 }
 .footericon i{
   margin: 0 5px;
   letter-spacing: 0;
   font-size: 20px;
+}
+.footermedia h3{
+  font-size: 10px;
 }
 .media h3{
   width: 100%;
