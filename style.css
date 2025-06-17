@@ -1309,6 +1309,11 @@ span {
 }
 
 
+/* @media(min-width: 400px) and (max-width:600px){
+
+} */
+
+
 @media (max-width: 600px) {
   body{
     overflow-x:hidden ;
@@ -1354,7 +1359,7 @@ span {
   height: 30%;
 }
 .heading{
-  width: 100vw;
+  /* width: 100vw; */
   height: 40%;
   font-size: 90px;
 }
