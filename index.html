@@ -21,6 +21,55 @@
     />
   </head>
   <body>
+    <div class="addToCart">
+      <div class="bgBlur"></div>
+      <div class="mainCart">
+        <div class="baseCart">
+          <div class="header">
+            <h1>CART</h1>
+            <div class="cancelIcon">
+              <i class="ri-close-large-fill"></i>
+            </div>
+          </div>
+
+          <!-- <div class="mainBody">
+            <div class="bagIcon">
+              <i class="ri-shopping-bag-4-line"></i>
+            </div>
+            <div class="noItem">
+              <p>NO PRODUCTS IN THE CART</p>
+            </div>
+          </div>
+          
+          <div class="footer">
+            <button>RETURN TO SHOP</button>
+          </div> -->
+          <div class="cartMain">
+            <div class="cartProduct">
+              <!-- <div class="product1">
+                <div class="productImg">
+                  <img
+                    src="./assests/6274395-1-lightblue_450x600_crop_top.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="textContent">
+                  <div class="describtion">
+                    <p>ELEMENT BUFFALO PALID FLANNEL SHIRT IN REGULAR FIT</p>
+                    <h3>$72.00</h3>
+                  </div>
+                  <div class="inputBox">
+                    <input type="number" name ="quantity" class="quantity" value="1">
+                    <input type="number" name="price" class="price">
+                    <i class="ri-delete-bin-2-fill deleteIcon"></i>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <nav class="subbar">
       <div class="currency">
         <p>EUR</p>
@@ -71,8 +120,8 @@
         <i class="fa-solid fa-user"></i>
       </div>
       <div class="span2">
-          <i class="fa-solid fa-cart-shopping"></i>
-        </div>
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
     </nav>
     <div class="background">
       <p class="heading">DISCOVER</p>
@@ -142,7 +191,6 @@
       <section class="subbase">
         <section class="mencart">
           <div class="sidegap">
-            
             <section class="emptyspace"></section>
             <div class="text">
               <h2>MEN'S JACKETS</h2>
@@ -171,9 +219,9 @@
                 </div>
                 <section class="choicecontent">
                   <p>ACCESSORIES</p>
-                <h3>RIVER ISLAND SKINNY FIT BLAZER IN LIGHT BLUE</h3>
-                <h5>$71.00</h5>
-                <button>ADD TO CART</button>
+                  <h3 class="detail">RIVER ISLAND SKINNY FIT BLAZER IN LIGHT BLUE</h3>
+                  <h5 class="price">$71.00</h5>
+                  <button class="addBtn">ADD TO CART</button>
                 </section>
               </div>
               <div class="choice">
@@ -192,10 +240,10 @@
                   </div>
                 </div>
                 <section class="choicecontent">
-                <p>CLOTHING</p>
-                <h3>ELEMENT BUFFALO PLAIND FLANNEL SHIRT IN REGULAR FIT</h3>
-                <h5>$107.00</h5>
-                <button>ADD TO CART</button>
+                  <p>CLOTHING</p>
+                  <h3 class="detail">ELEMENT BUFFALO PLAIND FLANNEL SHIRT IN REGULAR FIT</h3>
+                  <h5 class="price">$107.00</h5>
+                  <button class="addBtn">ADD TO CART</button>
                 </section>
               </div>
               <div class="choice">
@@ -222,10 +270,12 @@
                   </div>
                 </div>
                 <section class="choicecontent">
-                <p>CLOTHING</p>
-                <h3>UNITED COLORS OF BENETTON FAUX SHEARLING HOODED JACKET</h3>
-                <h5>$209.00</h5>
-                <button>ADD TO CART</button>
+                  <p>CLOTHING</p>
+                  <h3 class="detail">
+                    UNITED COLORS OF BENETTON FAUX SHEARLING HOODED JACKET
+                  </h3>
+                  <h5 class="price">$209.00</h5>
+                  <button class="addBtn">ADD TO CART</button>
                 </section>
               </div>
             </section>
@@ -238,24 +288,30 @@
         <section class="mainshoegrid">
           <div class="shoegrid">
             <p>SHOES</p>
-            <h3>New Balance 996 Runnin...</h3>
-            <img src="./assests/shoes-home-01_300x.jpg" alt="" />
-            <h2><span>$92.00</span>$64.00</h2>
-            <button>ADD TO CART</button>
+            <h3 class="detail">New Balance 996 Runnin...</h3>
+            <img src="./assests/shoes-home-01_300x.jpg" alt="" class="shoe"/>
+            <h2 class="price"><span>$92.00</span>$64.00</h2>
+            <div class="shoeBtn">
+            <button class="addBtn">ADD TO CART</button>
+            </div>
           </div>
           <div class="shoegrid">
             <p>SHOES</p>
-            <h3>Vans Old Skool Ultramarine...</h3>
-            <img src="./assests/shoes-home-03_300x.jpg" alt="" />
-            <h2><span>$79.00</span>$57.00</h2>
-            <button>ADD TO CART</button>
+            <h3 class="detail">Vans Old Skool Ultramarine...</h3>
+            <img src="./assests/shoes-home-03_300x.jpg" alt="" class="shoe"/>
+            <h2 class="price"><span>$79.00</span>$57.00</h2>
+            <div class="shoeBtn">
+            <button class="addBtn">ADD TO CART</button>
+            </div>
           </div>
           <div class="shoegrid">
             <p>SHOES</p>
-            <h3>Adidas Originals Superstar...</h3>
-            <img src="./assests/shoes-home-02_300x.jpg" alt="" />
-            <h2><span>$106.00</span>$92.00</h2>
-            <button>ADD TO CART</button>
+            <h3 class="detail">Adidas Originals Superstar...</h3>
+            <img src="./assests/shoes-home-02_300x.jpg" alt="" class="shoe"/>
+            <h2 class="price"><span>$106.00</span>$92.00</h2>
+            <div class="shoeBtn">
+            <button class="addBtn">ADD TO CART</button>
+            </div>
           </div>
         </section>
       </section>
@@ -286,9 +342,9 @@
                 </div>
                 <section class="choicecontent2">
                   <p>CLOTHING</p>
-                <h3>FAME AND PARTNERS TALL VALENCIA MAXI DRESS</h3>
-                <h5>$141.00</h5>
-                <button>ADD TO CART</button>
+                  <h3 class="detail">FAME AND PARTNERS TALL VALENCIA MAXI DRESS</h3>
+                  <h5 class="price">$141.00</h5>
+                  <button class="addBtn">ADD TO CART</button>
                 </section>
               </div>
               <div class="choice2">
@@ -315,9 +371,9 @@
                 </div>
                 <section class="choicecontent2">
                   <p>CLOTHING</p>
-                <h3>DEEP ONE SHOULDER MIDI BODYCON DRESS</h3>
-                <h5>$93.00</h5>
-                <button>ADD TO CART</button>
+                  <h3 class="detail">DEEP ONE SHOULDER MIDI BODYCON DRESS</h3>
+                  <h5 class="price">$93.00</h5>
+                  <button class="addBtn">ADD TO CART</button>
                 </section>
               </div>
               <div class="choice2">
@@ -341,9 +397,9 @@
                 </div>
                 <section class="choicecontent2">
                   <p>CLOTHING</p>
-                <h3>OUT FROM UNDER STARDUST SLIP DRESS</h3>
-                <h5>$34.00</h5>
-                <button>ADD TO CART</button>
+                  <h3 class="detail">OUT FROM UNDER STARDUST SLIP DRESS</h3>
+                  <h5 class="price">$34.00</h5>
+                  <button class="addBtn">ADD TO CART</button>
                 </section>
               </div>
             </section>
@@ -380,9 +436,9 @@
             </div>
             <div class="bestsellingcontent">
               <p>CLOTHING</p>
-            <h3>OUT FROM UNDER STARDUST SLIP DRESS</h3>
-            <h5>$34.00</h5>
-            <button>ADD TO CART</button>
+              <h3 class="detail">OUT FROM UNDER STARDUST SLIP DRESS</h3>
+              <h5 class="price">$34.00</h5>
+              <button class="addBtn">ADD TO CART</button>
             </div>
           </div>
           <div class="bestselling">
@@ -409,9 +465,9 @@
             </div>
             <div class="bestsellingcontent">
               <p>CLOTHING</p>
-            <h3>DEEP ONE SHOULDER MIDI BODYCON DRESS</h3>
-            <h5>$92.00</h5>
-              <button>ADD TO CART</button>
+              <h3 class="detail">DEEP ONE SHOULDER MIDI BODYCON DRESS</h3>
+              <h5 class="price">$92.00</h5>
+              <button class="addBtn">ADD TO CART</button>
             </div>
           </div>
           <div class="bestselling tohide">
@@ -431,9 +487,9 @@
             </div>
             <div class="bestsellingcontent">
               <p>CLOTHING</p>
-            <h3>ELEMENT BUFFALO PLAIND FLANNEL SHIRT IN REGULAR FIT</h3>
-            <h5>$106.00</h5>
-            <button>ADD TO CART</button>
+              <h3 class="detail">ELEMENT BUFFALO PLAIND FLANNEL SHIRT IN REGULAR FIT</h3>
+              <h5 class="price">$106.00</h5>
+              <button class="addBtn">ADD TO CART</button>
             </div>
           </div>
           <div class="bestselling hide">
@@ -453,9 +509,9 @@
             </div>
             <div class="bestsellingcontent">
               <p>CLOTHING</p>
-            <h3>FAME AND PARTNERS TALL VALENCIA MAXI DRESS</h3>
-            <h5>$140.00</h5>
-            <button>ADD TO CART</button>
+              <h3 class="detail">FAME AND PARTNERS TALL VALENCIA MAXI DRESS</h3>
+              <h5 class="price">$140.00</h5>
+              <button class="addBtn">ADD TO CART</button>
             </div>
           </div>
           <div class="bestselling hide">
@@ -479,9 +535,9 @@
             </div>
             <div class="bestsellingcontent">
               <p>CLOTHING</p>
-            <h3>AVIATOR JACKET IN FAUX SUEDE</h3>
-            <h5>$195.00</h5>
-            <button>ADD TO CART</button>
+              <h3 class="detail">AVIATOR JACKET IN FAUX SUEDE</h3>
+              <h5 class="price">$195.00</h5>
+              <button class="addBtn">ADD TO CART</button>
             </div>
           </div>
         </section>
@@ -494,7 +550,7 @@
         <section class="gridnews">
           <div class="news">
             <div class="newsimg">
-            <img src="./assests/blog-img-06_1024x.jpg" alt="" />
+              <img src="./assests/blog-img-06_1024x.jpg" alt="" />
             </div>
             <div class="newsposition1">
               <h3>Vedio Sample</h3>
@@ -509,14 +565,14 @@
           </div>
           <div class="news tohide">
             <div class="newsimg">
-            <img src="./assests/blog-img-08_1024x.jpg" alt="" />
+              <img src="./assests/blog-img-08_1024x.jpg" alt="" />
             </div>
             <div class="newsposition1">
               <h3>Awesome Gallery Photo</h3>
             </div>
             <div class="line">
               <hr />
-            </div> 
+            </div>
             <div class="date">
               <i class="ri-calendar-2-fill"></i>
               <p>FEBRUARY 22,2017</p>
@@ -524,7 +580,7 @@
           </div>
           <div class="news tohide">
             <div class="newsimg">
-            <img src="./assests/blog-img-09_1024x.jpg" alt="" />
+              <img src="./assests/blog-img-09_1024x.jpg" alt="" />
             </div>
             <div class="newsposition1">
               <h3>Halvetica astin bespoke</h3>
@@ -585,15 +641,16 @@
         <section class="media">
           <hr />
           <div class="footericon">
-          <i class="ri-twitter-fill"></i>
-          <i class="ri-facebook-fill"></i>
-          <i class="ri-pinterest-fill"></i>
-          <i class="ri-instagram-line"></i>
+            <i class="ri-twitter-fill"></i>
+            <i class="ri-facebook-fill"></i>
+            <i class="ri-pinterest-fill"></i>
+            <i class="ri-instagram-line"></i>
           </div>
           <hr />
         </section>
         <h3>© 2017 - Eva Shopify Theme. Developed by RoarTheme</h3>
       </section>
     </section>
+    <script src="./script.js"></script>
   </body>
 </html>
