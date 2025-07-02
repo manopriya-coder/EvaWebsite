@@ -3,7 +3,10 @@ const mainCart = document.querySelector(".addToCart");
 const closeIcon = document.querySelector(".cancelIcon");
 const addCartBtn = document.querySelectorAll(".addBtn");
 const touchBlur = document.querySelector(".bgBlur");
+const inputPrice = document.querySelectorAll(".priceInput");
+
 const productArray = [];
+const totalArray = [];
 
 // console.log(deleteIcon);
 
@@ -54,28 +57,62 @@ function delAndQuantity() {
         console.log(delArrayIndex);
 
         deldiv.remove();
+        updateTotal();
       }
     });
   });
 }
 
+function totalCalEach() {
+  const cartProductDiv = document.querySelectorAll(".product1");
 
+  cartProductDiv.forEach((cartProduct) => {
+    const inputTag = cartProduct.querySelector("input");
+    const price = cartProduct.querySelector(".productPrice");
+    const priceDisplay = cartProduct.querySelector(".priceInput");
+    inputTag.addEventListener("change", function (event) {
+      const inputValue = event.target.value;
+      const priceValue = price.innerText.replace("$", "");
 
-function calTotalForEach() {
-  const inputPrice = document.querySelectorAll(".priceInput");
-  const inputQuantity = document.querySelectorAll(".quantity");
-  const productPrice = document.querySelectorAll(".price").innerText;
+      const totalPrice = priceValue * inputValue;
 
-  const quantity=parseInt(inputQuantity.value)||0;
+      priceDisplay.innerText = totalPrice;
+      updateTotal();
+    });
+  });
 
-  const totPrice =productPrice * quantity;
+  
 
-  inputPrice.innerText= totPrice;
-  console.log(totPrice);
+  // const inputQuantity = document.querySelectorAll(".quantity");
+  // const productPrice = document.querySelectorAll(".price").innerText;
+  // const priceInput = document.querySelectorAll(".priceInput");
+  // console.log(productPrice);
+  // priceInput.forEach(function (priceTag) {
+  //   priceTag.addEventListener("change", function (event) {
+  //     if (event.target.value > 1) {
+  //       const totPrice = productPrice * inputQuantity;
+  //       productPrice.innerText = totPrice;
+  //       console.log(totPrice);
+  //     }
+  //   });
+  // });
 }
-calTotalForEach();
 
+const totalDisplay = document.querySelector(".totalDisplay");
 
+  function updateTotal() {
+    const priceDisplayTotal = document.querySelectorAll(".priceInput");
+    let total = 0;
+
+    priceDisplayTotal.forEach((priceAmt) => {
+      // const finalPrice =parseInt(totalDisplay.innerText);
+      let sub = parseInt(priceAmt.innerText.replace("$", ""));
+      total += sub;
+      console.log(total);
+      totalDisplay.innerText = `$${total}`;
+    });
+  }
+// const quantity = parseInt(inputQuantity.value) || 0;
 
 addCartBtn.forEach(function (btn) {
   btn.addEventListener("click", function () {
@@ -83,6 +120,7 @@ addCartBtn.forEach(function (btn) {
     const productImg = productParent.querySelector(".front,.shoe").src;
     const productDetail = productParent.querySelector(".detail").innerText;
     const productPrice = productParent.querySelector(".price").innerText;
+
     // console.log(productImg,productDetail,productPrice);
     const cartDesignFunction = cartDesign(
       productImg,
@@ -108,6 +146,9 @@ addCartBtn.forEach(function (btn) {
     cartProductHold.innerHTML += cartDesignFunction;
 
     delAndQuantity();
+
+    totalCalEach();
+    updateTotal();
   });
 });
 
@@ -127,7 +168,7 @@ function cartDesign(image, detail, price) {
                   </div>
                   <div class="inputBox">
                     <input type="number" name ="quantity" class="quantity" value="1">
-                    <p class="priceInput">${price }</p>
+                    <p class="priceInput">${price}</p>
                     <i class="ri-delete-bin-2-fill deleteIcon"></i>
                   </div>
                 </div>
