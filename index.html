@@ -21,6 +21,38 @@
     />
   </head>
   <body>
+    <div class="bgBlurLogin"></div>
+    <div class="logInDiv">
+      <p class="logInHeading">Sign In</p>
+      <div class="loginForm">
+        <form action="" class="authForm">
+          <input type="text" id="emailField" placeholder="Enter your Email" />
+          <br />
+          <br />
+          <br />
+          <input
+            type="password"
+            id="passwordField"
+            placeholder="Enter your password"
+          />
+          <br />
+          <br />
+          <br />
+          <input
+            type="password"
+            id="confirmPassword"
+            placeholder="Confirm Password"
+          />
+          <br /><br /><br />
+          <button type="submit">Submit</button>
+          <br /><br /><br />
+          <h5 class="toggleText">Already have an accounct? Log In</h5>
+          <br /><br /><br />
+          <p class="meg">...</p>
+        </form>
+      </div>
+    </div>
+
     <div class="addToCart">
       <div class="bgBlur"></div>
       <div class="mainCart">
@@ -67,7 +99,7 @@
               </div> -->
             </div>
             <div class="cartFooter">
-              <hr>
+              <hr />
               <div class="total">
                 <h3>Total :</h3>
                 <p class="totalDisplay">0</p>
@@ -77,6 +109,7 @@
         </div>
       </div>
     </div>
+
     <nav class="subbar">
       <div class="currency">
         <p>EUR</p>
@@ -123,6 +156,7 @@
         <div class="span">
           <p class="cart">CART</p>
           <i class="fa-solid fa-cart-shopping"></i>
+          <p class="notify">0</p>
         </div>
         <i class="fa-solid fa-user"></i>
       </div>
@@ -226,7 +260,9 @@
                 </div>
                 <section class="choicecontent">
                   <p>ACCESSORIES</p>
-                  <h3 class="detail">RIVER ISLAND SKINNY FIT BLAZER IN LIGHT BLUE</h3>
+                  <h3 class="detail">
+                    RIVER ISLAND SKINNY FIT BLAZER IN LIGHT BLUE
+                  </h3>
                   <h5 class="price">$71.00</h5>
                   <button class="addBtn">ADD TO CART</button>
                 </section>
@@ -248,7 +284,9 @@
                 </div>
                 <section class="choicecontent">
                   <p>CLOTHING</p>
-                  <h3 class="detail">ELEMENT BUFFALO PLAIND FLANNEL SHIRT IN REGULAR FIT</h3>
+                  <h3 class="detail">
+                    ELEMENT BUFFALO PLAIND FLANNEL SHIRT IN REGULAR FIT
+                  </h3>
                   <h5 class="price">$107.00</h5>
                   <button class="addBtn">ADD TO CART</button>
                 </section>
@@ -296,28 +334,28 @@
           <div class="shoegrid">
             <p>SHOES</p>
             <h3 class="detail">New Balance 996 Runnin...</h3>
-            <img src="./assests/shoes-home-01_300x.jpg" alt="" class="shoe"/>
+            <img src="./assests/shoes-home-01_300x.jpg" alt="" class="shoe" />
             <h2 class="price"><span>$92.00</span>$64.00</h2>
             <div class="shoeBtn">
-            <button class="addBtn">ADD TO CART</button>
+              <button class="addBtn">ADD TO CART</button>
             </div>
           </div>
           <div class="shoegrid">
             <p>SHOES</p>
             <h3 class="detail">Vans Old Skool Ultramarine...</h3>
-            <img src="./assests/shoes-home-03_300x.jpg" alt="" class="shoe"/>
+            <img src="./assests/shoes-home-03_300x.jpg" alt="" class="shoe" />
             <h2 class="price"><span>$79.00</span>$57.00</h2>
             <div class="shoeBtn">
-            <button class="addBtn">ADD TO CART</button>
+              <button class="addBtn">ADD TO CART</button>
             </div>
           </div>
           <div class="shoegrid">
             <p>SHOES</p>
             <h3 class="detail">Adidas Originals Superstar...</h3>
-            <img src="./assests/shoes-home-02_300x.jpg" alt="" class="shoe"/>
+            <img src="./assests/shoes-home-02_300x.jpg" alt="" class="shoe" />
             <h2 class="price"><span>$106.00</span>$92.00</h2>
             <div class="shoeBtn">
-            <button class="addBtn">ADD TO CART</button>
+              <button class="addBtn">ADD TO CART</button>
             </div>
           </div>
         </section>
@@ -349,7 +387,9 @@
                 </div>
                 <section class="choicecontent2">
                   <p>CLOTHING</p>
-                  <h3 class="detail">FAME AND PARTNERS TALL VALENCIA MAXI DRESS</h3>
+                  <h3 class="detail">
+                    FAME AND PARTNERS TALL VALENCIA MAXI DRESS
+                  </h3>
                   <h5 class="price">$141.00</h5>
                   <button class="addBtn">ADD TO CART</button>
                 </section>
@@ -494,7 +534,9 @@
             </div>
             <div class="bestsellingcontent">
               <p>CLOTHING</p>
-              <h3 class="detail">ELEMENT BUFFALO PLAIND FLANNEL SHIRT IN REGULAR FIT</h3>
+              <h3 class="detail">
+                ELEMENT BUFFALO PLAIND FLANNEL SHIRT IN REGULAR FIT
+              </h3>
               <h5 class="price">$106.00</h5>
               <button class="addBtn">ADD TO CART</button>
             </div>
@@ -658,6 +700,9 @@
         <h3>© 2017 - Eva Shopify Theme. Developed by RoarTheme</h3>
       </section>
     </section>
-    <script src="./script.js"></script>
+    <script type="module" src="./script.js"></script>
+    <!-- <script>
+      console.log(Math.floor(Math.random()*100))+1
+    </script> -->
   </body>
 </html>
